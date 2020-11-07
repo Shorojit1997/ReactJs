@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-//this is comment section for this code and also commited
+
 class Select extends Component {
     constructor()
     {
