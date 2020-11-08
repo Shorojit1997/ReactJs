@@ -14,7 +14,7 @@ class List extends Component {
         return (
             <div>
                 {dataItem}
-                <h3>Yes</h3>
+    
             </div>
         );
     }
