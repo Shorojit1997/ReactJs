@@ -29,7 +29,7 @@ const myrouter=(
 
 ReactDOM.render(
   <React.StrictMode>
-    {myrouter}
+   <App></App>
   </React.StrictMode>,
   document.getElementById('root')
 );
