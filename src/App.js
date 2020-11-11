@@ -6,12 +6,13 @@ import Select from './mycomponents/Select';
 import List from './mycomponents/List'
 import JsonList from './JsonList';
 import About from './pages/About';
+import CountryList from './HttpRequest/CountryList';
+import NewCountryList from './HttpRequest/NewCountryList';
 
 function App() {
   return (
     <div className="App">
-     <h1>Home Page</h1>
-     <About></About>
+     <NewCountryList></NewCountryList>
      
     </div>
   );
