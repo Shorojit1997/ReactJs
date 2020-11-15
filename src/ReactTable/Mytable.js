@@ -5,8 +5,8 @@ import ReactTable from 'react-table'
 
 class Mytable extends Component {
     render() {
-        const tabledata=[{name:"Sagor",age:"23"}]
-        const col=[{Header:"Name",accessor:""},{Header:"Age",accessor:""}]
+        const tabledata = [{ name: "Sagor", age: "23" }]
+        const col = [{ Header: "Name", accessor: "" }, { Header: "Age", accessor: "" }]
 
         return (
             <div>
@@ -14,9 +14,9 @@ class Mytable extends Component {
                     data={tabledata}
                     columns={col}
                     defaultPageSize={2}
-                    pageSizeOptions={[2,4,6,7]}
+                    pageSizeOptions={[2, 4, 6, 7]}
                 </ReactTable>
-                
+
             </div>
         );
     }

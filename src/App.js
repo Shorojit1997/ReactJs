@@ -8,12 +8,14 @@ import JsonList from './JsonList';
 import About from './pages/About';
 import CountryList from './HttpRequest/CountryList';
 import NewCountryList from './HttpRequest/NewCountryList';
+import Navigation from './ReactBootstrap/Navigation';
+
 
 function App() {
   return (
     <div className="App">
-     <NewCountryList></NewCountryList>
-     
+      
+      <Navigation></Navigation>
     </div>
   );
 }
