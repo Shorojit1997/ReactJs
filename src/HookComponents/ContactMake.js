@@ -6,18 +6,24 @@ class ContactMake extends Component {
         this.state = {
             name: "",
         }
+        this.ob=null;
      
+    }
+    SetState=(e)=>{
+
+
     }
 
     render() {
      
-        const value=this.state.name;
+        const element=this.state.name;
         return (
+            
             <div>
                 <form>
-                    <input onChange={(e)=>this.setState({name:e.target.value})} type="text" placeholder="Enter your name..." /><br></br>
+                    <input onChange={this.SetState} type="text" placeholder="Enter your name..." /><br></br>
                 </form>
-                <h1>{value}</h1>
+               
                
             </div>
         );

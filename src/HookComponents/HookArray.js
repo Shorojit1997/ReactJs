@@ -2,21 +2,27 @@
 import React,{useState} from 'react';
 
 const HookArray = () => {
-    const [contact,setContact]=useState([])
-    const submitHandeler=(e)=>{
+    const [contact,setContact]=useState([]);
+    const [entry,setEntry]=useState(null);
+    const submitHandeler=()=>{
         setContact([...contact,{
             id:contact.length,
-            name:e.target.value,
-
+            name:entry
         }])
 
+    }
+    const onSet=(e)=>{
+        
+        setEntry(e.target.value);
     }
     return (
         <div>
             <form>
-                <input name="name" type="text" placeholder="Enter your name..."/><br></br>
-                <input onClick={submitHandeler} type="submit" value="Added Contact"></input><br></br>
+                <input onChange={onSet} name="name" type="text" placeholder="Enter your name..."/><br></br>
+                
             </form>
+            <button onClick={submitHandeler} >Added Contact</button><br></br>
+
             <ul>
                 {
                     contact.map(list=>{
